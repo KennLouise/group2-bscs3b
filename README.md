@@ -2,7 +2,7 @@
 
 By: Kenn Louise Comprado
 
-[My Streamlit App]https://comprado-bscs3b.streamlit.app/
+[My Streamlit App](https://comprado-bscs3b.streamlit.app/)
 
 This is the app you get when you run `streamlit hello`, extracted as its own app.
 
