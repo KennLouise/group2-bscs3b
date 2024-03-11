@@ -28,7 +28,3 @@ def run():
     st.write("By: Kenn Louise Comprado")
     st.write("BSCS-3B")
     st.sidebar.success("Select a demo above.")
-
-    st.markdown(
-  
-    )
