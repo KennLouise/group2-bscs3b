@@ -29,7 +29,7 @@ def run():
     st.write("BSCS-3B")
     st.sidebar.success("Select a demo above.")
     
-     st.markdown(
+    st.markdown(
         """
         Streamlit is an open-source app framework built specifically for
         Machine Learning and Data Science projects.
