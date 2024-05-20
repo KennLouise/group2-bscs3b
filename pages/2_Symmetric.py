@@ -1,7 +1,5 @@
 import streamlit as st
 import streamlit.components.v1 as components
-from Crypto.Cipher import AES
-from Crypto.Util.Padding import pad, unpad
 import base64
 import os
 
