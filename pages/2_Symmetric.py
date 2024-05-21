@@ -6,7 +6,7 @@ import base64
 import os
 
 st.set_page_config(
-        page_title="Symmetric Encryption",
+        page_title="WELCOME TO XOR_CIPHER!:sunglasses::fire:",
         page_icon="🔑",
     )
 
