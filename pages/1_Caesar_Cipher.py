@@ -1,6 +1,6 @@
-elif encryption_type == "Caesar Cipher":
+encryption_type == "Caesar Cipher":
 
-    def encrypt_decrypt_text(text, shift_keys, ifdecrypt):
+def encrypt_decrypt_text(text, shift_keys, ifdecrypt):
 
         result = ""
         
@@ -20,15 +20,15 @@ elif encryption_type == "Caesar Cipher":
                     result += char
         return result
 
-    def encrypt_decrypt_file(file, shift_keys, ifdecrypt):
+def encrypt_decrypt_file(file, shift_keys, ifdecrypt):
         result = ""
         file_contents = file.read()
         result = encrypt_decrypt_text(file_contents, shift_keys, ifdecrypt)
         return result
 
-    st.write("<h4>Caesar Cipher:</h4><p style='text-align: justify;'>The Caesar cipher is one of the simplest and most widely known encryption techniques. It is a type of substitution cipher where each letter in the plaintext is shifted a certain number of places down or up the alphabet.</p>", unsafe_allow_html=True)
+st.write("<h4>Caesar Cipher:</h4><p style='text-align: justify;'>The Caesar cipher is one of the simplest and most widely known encryption techniques. It is a type of substitution cipher where each letter in the plaintext is shifted a certain number of places down or up the alphabet.</p>", unsafe_allow_html=True)
     
-    st.write("""
+st.write("""
         #### Process:
         1. Convert each character of the plaintext to its ASCII value.
         2. Shift the ASCII value by the given key value.
@@ -36,10 +36,10 @@ elif encryption_type == "Caesar Cipher":
         4. Convert the new ASCII value back to its corresponding character.
         """)
 
-    option = st.radio("Select Input Type:", ("Text", "File"))
-    text = ""
-    file = ""
-    if option == "Text":
+option = st.radio("Select Input Type:", ("Text", "File"))
+text = ""
+file = ""
+if option == "Text":
         text = st.text_area("Plaintext:")
         shift_keys = list(map(int, st.text_area("Shift Keys:").split()))
         if st.button("Encrypt"):
@@ -49,7 +49,7 @@ elif encryption_type == "Caesar Cipher":
             st.write("Decrypted text:", decrypt)
 
 
-    elif option == "File":
+elif option == "File":
         upfile = st.file_uploader("Upload a file")
         if upfile is not None:
             filetype = os.path.splitext(upfile.name)[-1][1:]
