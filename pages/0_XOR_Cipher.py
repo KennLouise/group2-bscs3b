@@ -10,7 +10,7 @@ st.header("WELCOME TO XOR_CIPHER!:sunglasses::fire:")
 st.markdown("<h4>XOR Cipher:</h4><p style='text-align: justify;'>The XOR cipher, also known as the Vernam cipher or the one-time pad, is a symmetric encryption algorithm. It operates by taking the plaintext and a secret key of the same length and performing a bitwise XOR operation between each bit of the plaintext and the corresponding bit of the key.</p>", unsafe_allow_html=True)
     
 st.write("""
-        #### Process:
+        #### HOW IT WORKS?
         1. Convert the plaintext and the key to bytes.
         2. Iterate through each byte of the plaintext.
         3. XOR each byte of the plaintext with the corresponding byte of the key.
