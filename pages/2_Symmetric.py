@@ -43,7 +43,7 @@ if encryption_type == "XOR Cipher":
         4. Append the result to the ciphertext.
         5. Decryption is the same as encryption.
         """)
-
+    option = st.radio("Select Input Type:", ("Text", "File"))
 
     if option == "Text":
         plaintext = bytes(st.text_area("Text:").encode())
