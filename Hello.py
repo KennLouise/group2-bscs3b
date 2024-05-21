@@ -25,8 +25,11 @@ def run():
     )
 
     st.write("# Welcome to Streamlit! 👋")
-    st.write("By: Kenn Louise Comprado")
-    st.write("BSCS-3B")
+    st.write("# This is our application!")
+    st.write("""By Group 2: Kenn Louise Comprado
+            Vincent James Salvino
+            Aina Mae Dela Justa)
+    st.write("BSCS-3B""")
     st.sidebar.success("Select a demo above.")
     
     st.markdown(
