@@ -32,7 +32,7 @@ elif hash_type == "SHA512":
     """)
 
 st.write("""
-    #### Process:
+    #### HOW IT WORKS?
     1. If the input is text, encode the text using UTF-8.
     2. Use the selected hashing algorithm to generate the hash value.
     3. Display the hash value.
