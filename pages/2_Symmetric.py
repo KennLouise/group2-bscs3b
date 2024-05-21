@@ -6,11 +6,11 @@ import base64
 import os
 
 st.set_page_config(
-        page_title="WELCOME TO XOR_CIPHER!:sunglasses::fire:",
+        page_title="Symmetric Encryption",
         page_icon="🔑",
     )
 
-st.write("# Symmetric Encryption")
+st.write("# WELCOME SYMMETRIC ENCRYPTION!:sunglasses::fire:")
 
 encryption_type = st.selectbox("Select Encryption Algorithm", ["XOR Cipher", "Caesar Cipher","AES"])
 
