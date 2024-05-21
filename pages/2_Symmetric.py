@@ -43,57 +43,7 @@ if encryption_type == "XOR Cipher":
         4. Append the result to the ciphertext.
         5. Decryption is the same as encryption.
         """)
-    option = st.radio("Select Input Type:", ("Text", "File"))
 
-    if option == "Text":
-        plaintext = bytes(st.text_area("Text:").encode())
-        key = bytes(st.text_area("Key:").encode())
-        if st.button("Encrypt"):
-            col1, col2 = st.columns(2)
-            if plaintext == key:
-                st.write("Plaintext should not be equal to the key")
-            elif len(plaintext.decode()) < len(key.decode()):
-                st.write("Plaintext length should be greater than or equal to the key length")
-            else:
-                with col1:
-                    encrypted_text = xor_encrypt(plaintext, key)
-                    st.write("Encrypted Text:", encrypted_text.decode())
-                with col2:
-                    decrypted_text = xor_decrypt(encrypted_text, key)
-                    st.write("Decrypted Text:", decrypted_text.decode())
-
-    elif option == "File":
-        uploaded_file = st.file_uploader("Upload a file")
-        if uploaded_file is not None:
-            filetype = os.path.splitext(uploaded_file.name)[-1][1:]
-            if filetype == "enc":  # If uploaded file is encrypted
-                key = bytes(st.text_area("Key:").encode())
-                if st.button("Decrypt"):
-                    file_contents = uploaded_file.read()
-                    decrypted_file_contents = xor_decrypt(file_contents, key)
-                    st.write("File Decrypted")
-                    
-                    # Get the original file extension
-                    original_filename = uploaded_file.name[:-4]
-                    st.download_button(
-                        label="Download Decrypted File",
-                        data=bytes(decrypted_file_contents),  # Convert to bytes
-                        file_name=original_filename,
-                        mime="application/octet-stream"
-                    )
-            else:  # If uploaded file is not encrypted
-                key = bytes(st.text_area("Key:").encode())
-                if st.button("Encrypt"):
-                    file_contents = uploaded_file.read()
-                    encrypted_file_contents = xor_encrypt(file_contents, key)
-                    st.write("File Encrypted")
-            
-                    st.download_button(
-                        label="Download Encrypted File",
-                        data=bytes(encrypted_file_contents),  # Convert to bytes
-                        file_name=f"{uploaded_file.name}.enc",
-                        mime="application/octet-stream"
-                    )
 
 elif encryption_type == "Caesar Cipher":
 
