@@ -6,7 +6,7 @@ st.set_page_config(
         page_icon="🔑",
     )
 
-st.write("# Hashing Functions")
+st.write("# WELCOME SYMMETRIC ENCRYPTION!:sunglasses::fire:")
 
 hash_type = st.selectbox("Select Hashing Algorithm", ["MD5", "SHA1", "SHA256", "SHA512"])
 
