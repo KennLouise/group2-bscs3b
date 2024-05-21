@@ -28,8 +28,8 @@ def run():
     st.write("# This is our application!")
     st.write("""By Group 2: Kenn Louise Comprado
             Vincent James Salvino
-            Aina Mae Dela Justa)
-    st.write("BSCS-3B""")
+            Aina Mae Dela Justa""")
+    st.write("BSCS-3B")
     st.sidebar.success("Select a demo above.")
     
     st.markdown(
