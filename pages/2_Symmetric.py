@@ -32,8 +32,6 @@ if encryption_type == "XOR Cipher":
         """Decrypts ciphertext using XOR cipher with the given key."""
         return xor_encrypt(ciphertext, key)  # XOR decryption is the same as encryption
 
-    # Example usage:
-    st.markdown("<h4>XOR Cipher:</h4><p style='text-align: justify;'>The XOR cipher, also known as the Vernam cipher or the one-time pad, is a symmetric encryption algorithm. It operates by taking the plaintext and a secret key of the same length and performing a bitwise XOR operation between each bit of the plaintext and the corresponding bit of the key.</p>", unsafe_allow_html=True)
     
     st.write("""
         #### HOW IT WORKS?
@@ -123,8 +121,7 @@ elif encryption_type == "Caesar Cipher":
         result = encrypt_decrypt_text(file_contents, shift_keys, ifdecrypt)
         return result
 
-    st.write("<h4>Caesar Cipher:</h4><p style='text-align: justify;'>The Caesar cipher is one of the simplest and most widely known encryption techniques. It is a type of substitution cipher where each letter in the plaintext is shifted a certain number of places down or up the alphabet.</p>", unsafe_allow_html=True)
-    
+   
     st.write("""
         #### HOW IT WORKS?
         1. Convert each character of the plaintext to its ASCII value.
@@ -218,8 +215,7 @@ elif encryption_type == "AES":
             f.write(plaintext)
         return decrypted_file_path
 
-    st.markdown("<h4>AES Encryption and Decryption:</h4><p style='text-align: justify;'>AES (Advanced Encryption Standard) is a symmetric encryption algorithm used to secure sensitive data. It was established as the standard for encryption by the U.S. National Institute of Standards and Technology (NIST) in 2001. AES operates on blocks of data, and it supports key sizes of 128, 192, or 256 bits.</p>", unsafe_allow_html=True)
-
+    
     st.write("""
         #### HOW IT WORKS?
         1. Choose a key with a length of 16, 24, or 32 bytes.

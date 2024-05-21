@@ -13,10 +13,9 @@ encryption_type = st.selectbox("Select Encryption Algorithm", ["Diffie-Hellman",
 
 if encryption_type == "RSA":
 
-    st.markdown("<h4>RSA Encryption:</h4><p style='text-align: justify;'>RSA (Rivest-Shamir-Adleman) is a widely used asymmetric encryption algorithm for secure data transmission. Unlike symmetric encryption, which uses a single key for both encryption and decryption, RSA uses a pair of keys: a public key for encryption and a private key for decryption. It is named after its inventors: Ron Rivest, Adi Shamir, and Leonard Adleman.</p>", unsafe_allow_html=True)
-
+    
     st.write("""
-        #### Process:
+        #### HOW IT WORKS?
         1. Generate RSA public and private keys.
         2. Enter the plaintext message.
         3. Encrypt the message using the recipient's public key.
@@ -38,10 +37,9 @@ if encryption_type == "RSA":
         st.code(decrypted.decode('utf8'))
 
 elif encryption_type == "Diffie-Hellman":
-    st.markdown("<h4>Diffie-Hellman Key Exchange:</h4><p style='text-align: justify;'> Diffie-Hellman key exchange is a method of securely exchanging cryptographic keys over a public channel. It allows two parties to generate a shared secret key without exchanging the secret key directly.</p>", unsafe_allow_html=True)
         
     st.write("""
-        #### Process:
+        #### HOW IT WORKS?
         1. Choose a prime number (p) and a generator (g).
         2. Choose private keys (a and b).
         3. Generate shared secret keys for Alice and Bob using the Diffie-Hellman key exchange algorithm.
