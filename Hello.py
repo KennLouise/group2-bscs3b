@@ -26,7 +26,8 @@ def run():
 
     st.write("# Welcome to Streamlit! 👋")
     st.write("# This is our application!")
-    st.write("""By Group 2: Kenn Louise Comprado
+    st.write("""By Group 2:
+            Kenn Louise Comprado
             Vincent James Salvino
             Aina Mae Dela Justa""")
     st.write("BSCS-3B")
