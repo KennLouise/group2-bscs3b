@@ -5,7 +5,7 @@ st.set_page_config(
         page_icon="🔑",
     )
 
-st.writer("# WELCOME TO XOR_CIPHER!:sunglasses::fire:")
+st.write("# WELCOME TO XOR_CIPHER!:sunglasses::fire:")
 
   
 st.write("""
