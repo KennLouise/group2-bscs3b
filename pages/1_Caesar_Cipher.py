@@ -1,3 +1,7 @@
+import streamlit as st
+
+st.header("WELCOME TO CAESAR_CIPHER!:sunglasses::fire:")
+
 encryption_type == "Caesar Cipher":
 
 def encrypt_decrypt_text(text, shift_keys, ifdecrypt):
