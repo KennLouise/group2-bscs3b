@@ -2,6 +2,6 @@
 
 By: Kenn Louise Comprado
 
-[My Streamlit App](https://comprado-bscs3b.streamlit.app/)
+[Our Streamlit App](https://group2-bscs3b.streamlit.app/)
 
 Section: BSCS - 3B
