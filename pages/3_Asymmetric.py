@@ -4,7 +4,7 @@ from Crypto.Util import number
 
 st.set_page_config(
         page_title="Asymmetric Encryption",
-        page_icon="🏷️",
+        page_icon="🔑",
     )
 
 st.write("# Asymmetric Encryption")

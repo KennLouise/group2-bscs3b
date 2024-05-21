@@ -3,7 +3,7 @@ import hashlib
 
 st.set_page_config(
         page_title="Hashing Encryption",
-        page_icon="💼",
+        page_icon="🔑",
     )
 
 st.write("# Hashing Functions")
